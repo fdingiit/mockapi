@@ -23,7 +23,7 @@ func Add(a, b int) int {
 func Div(a, b int) (float32, *Error) {
 	if b == 0 {
 		return 0, &Error{
-			ErrCode: 1,
+			ErrCode: -1,
 			ErrMsg:  "cannot div by 0",
 			RawErr:  fmt.Errorf("cannot div by 0"),
 		}
